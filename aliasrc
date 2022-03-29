@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# aliases for common commands
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -v" \
+	mkdir="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f beataudio/best"
+
+# colorize commands if possible
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"

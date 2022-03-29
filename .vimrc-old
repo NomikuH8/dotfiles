@@ -1,0 +1,51 @@
+" set bg=light
+set bg=dark
+
+" highlight searches
+set hlsearch
+set incsearch
+
+" set clipboard to system clipboard
+set clipboard=unnamedplus
+
+" set tabsize
+set tabstop=4
+set shiftwidth=4
+
+set autoindent
+
+
+" basics
+	set nocompatible
+	syntax on
+	set encoding=utf-8
+	" line numbering
+	set number relativenumber
+
+" enable autocomplete ctrl+n to activate
+set wildmode=longest,list,full
+
+" disable automatic comment
+	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" split on right aways
+	set splitbelow splitright
+
+" REMAPS
+" shortcut split navigation
+	map <C-h> <C-w>h
+	map <C-j> <C-w>j
+	map <C-k> <C-w>k
+	map <C-l> <C-w>l
+
+" tabs
+	map <F5> :tabp<CR>
+	map <F6> :tabc<CR>
+	map <F7> :tabnew<CR>
+	map <F8> :tabn
+
+" paste from system clipboard w/ ctrl+i instead of shift+insert
+	map <S-insert> <C-i>
+
+" automatical deletion of trailing whitespaces on save
+	autocmd BufWritePre * %s/\s\+$//e

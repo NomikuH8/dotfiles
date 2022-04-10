@@ -1,4 +1,5 @@
 yay						aur helper
+feh						background image
 alacritty				terminal
 ttf-fira-code			monospace font
 ttf-ubuntu-font-family	normal font
@@ -14,6 +15,9 @@ learn to use one cli file manager:
 	lf
 	ranger
 	nnn
+
+in my repos:
+	dmenu
 
 the rest of the pallete, colors, etc, is from catppuccin repo
 https://github.com/catppuccin/catppuccin

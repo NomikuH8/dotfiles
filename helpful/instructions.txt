@@ -1,0 +1,14 @@
+used in arch
+
+get audio working:
+	sudo pacman -S pulseaudio
+	sudo mkdir /root/.config/pulse
+	sudo cp ~/.config/pulse/cookie /root/.config/pulse/cookie
+
+get internet working (dhcp):
+	sudo pacman -S dhcpcd
+	systemctl enable dhcpcd.service
+
+edit gtk themes, cursors, etc:
+	sudo pacman -S lxappearance
+	lxappearance

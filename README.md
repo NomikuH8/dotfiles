@@ -1,10 +1,20 @@
 my .rc files:
 
-vimrc and bashrc path:
+alacritty.yml
+xinitrc
+bashrc
+zshrc
+vimrc:
 	~/
 
-aliasrc path:
-	$HOME/.config/
+neovim:
+	~/.config/nvim/init.vim
 
-neovim init.vim path:
-	~/.config/nvim/
+polybar:
+	~/.config/polybar/config.ini
+
+i3:
+	~/.config/i3/config
+
+picom:
+	~/.config/picom.conf

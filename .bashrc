@@ -11,8 +11,9 @@ alias \
 	mv="mv -iv" \
 	rm="rm -v" \
 	mkdir="mkdir -pv" \
-	yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f beataudio/best"
+	yt="yt-dlp --add-metadata -i" \
+	yta="yt -x -f beataudio/best" \
+	vim="nvim"
 
 # colorize commands if possible
 alias \

@@ -56,21 +56,21 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 
 ## Alias section
 # aliases for common commands
-alias \
-	cp="cp -iv" \
-	df='df -h' \
-	mv="mv -iv" \
-	rm="rm -v" \
-	mkdir="mkdir -pv" \
-	yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f beataudio/best"
+alias cp="cp -iv"
+alias df="df -h"
+alias mv="mv -iv"
+alias rm="rm -v"
+alias mkdir="mkdir -pv"
+alias yt="yt-dlp --add-metadata -i"
+alias yta="yt -x -f beataudio/best"
+alias vim="nvim"
+alias vi="nvim"
 
 # colorize commands if possible
-alias \
-	ls="ls -hN --color=auto --group-directories-first" \
-	grep="grep --color=auto" \
-	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
+alias ls="ls -hN --color=auto --group-directories-first"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias ccat="highlight --out-format=ansi"
 
 
 # Theming section

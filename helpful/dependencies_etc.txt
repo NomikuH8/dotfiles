@@ -1,15 +1,15 @@
 yay						aur helper
 feh						background image
-alacritty				terminal
-ttf-fira-code			monospace font
-ttf-ubuntu-font-family	normal font
-pavucontrol				audio controller
-lxappearance			gtk theme customizer
-picom					add fade, blur, round cornes to i3
-polybar					better bar than i3
-papirus-icon-theme		awesome theme (needed for catppuccin icon pack)
-cava					cli audio visualizer
-pcmanfm					lightweight file manager
+alacritty					terminal
+ttf-fira-code					monospace font
+ttf-ubuntu-font-family				normal font
+pavucontrol					audio controller
+lxappearance					gtk theme customizer
+picom						add fade, blur, round cornes to i3
+polybar						better bar than i3
+papirus-icon-theme				awesome theme (needed for catppuccin icon pack)
+cava						cli audio visualizer
+pcmanfm						lightweight file manager
 
 learn to use one cli file manager:
 	lf

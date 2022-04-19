@@ -2,8 +2,7 @@ used in arch
 
 get audio working:
 	sudo pacman -S pulseaudio
-	sudo mkdir /root/.config/pulse
-	sudo cp ~/.config/pulse/cookie /root/.config/pulse/cookie
+	pulseaudio start
 
 get internet working (dhcp):
 	sudo pacman -S dhcpcd
@@ -12,3 +11,8 @@ get internet working (dhcp):
 edit gtk themes, cursors, etc:
 	sudo pacman -S lxappearance
 	lxappearance
+
+discord running slow: (doesn't work anymore)
+	sudo nvim /usr/share/applications/discord.desktop
+	change line 6 to:
+		"Exec=/usr/bin/discord --enable-gpu-rasterization

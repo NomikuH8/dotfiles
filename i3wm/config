@@ -198,6 +198,7 @@ mouse_warping none
 
 #exec "xrandr --output VGA-1 --mode 1600x900"
 exec "setxkbmap -layout br"
+exec "xrandr --output DVI-D-1 --primary"
 
 exec "feh --bg-fill ~/Pictures/Background/bg.png"
 exec "picom"

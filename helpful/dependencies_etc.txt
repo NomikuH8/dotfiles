@@ -10,6 +10,8 @@ polybar						better bar than i3
 papirus-icon-theme				awesome theme (needed for catppuccin icon pack)
 cava						cli audio visualizer
 pcmanfm						lightweight file manager
+noto-fonts-emoji				emoji font
+adobe-source-han-sans-jp-fonts			japanese font (update locale.conf and locale-gen)
 
 learn to use one cli file manager:
 	lf

@@ -24,7 +24,7 @@ set autoindent
 set smartindent
 
 " line numbers
-set number relativenumber
+set relativenumber
 
 " add an underline for better localization
 " set cursorline

@@ -13,6 +13,8 @@ pcmanfm						lightweight file manager
 flameshot					print screens
 noto-fonts-emoji				emoji font
 adobe-source-han-sans-jp-fonts			japanese font (update locale.conf and locale-gen)
+nitrogen					set different wallpapers in different screens
+nvidia						(only if the open-source drivers don't suit you)
 
 learn to use one cli file manager:
 	lf

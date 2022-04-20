@@ -198,9 +198,15 @@ hide_edge_borders both
 focus_follows_mouse no
 mouse_warping none
 
+# Brightness
+# super + shift + page up: reset brightness
+# super + shift + page down: remove 0.1 from brightness
+bindsym $mod+Shift+Page_Up exec xrandr --output DP-0 --brightness 1.0 --output DVI-D-0 --brightness 1.0
+bindsym $mod+Shift+Page_Down exec xrandr --output DP-0 --brightness $(echo "$(xrandr --verbose | grep DP-0 -A 5 | grep Brightness | grep -o '[0-9].*')-0.1" | bc) --output DVI-D-0 --brightness $(echo "$(xrandr --verbose | grep DVI-D-0 -A 5 | grep Brightness | grep -o '[0-9].*')-0.1" | bc)
+
 exec "setxkbmap -layout br"
 exec "xrandr --output DVI-D-0 --primary"
-# need to install nvidia drivers
+# Need to install nvidia drivers (may not be necessary)
 exec "xrandr --output DP-0 --right-of DVI-D-0"
 
 #exec "feh --bg-fill ~/Pictures/Background/bg.png"

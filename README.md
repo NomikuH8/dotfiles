@@ -18,3 +18,6 @@ i3:
 
 picom:
 	~/.config/picom.conf
+
+flameshot:
+	~/.config/flameshot/flameshot.ini

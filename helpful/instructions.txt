@@ -16,6 +16,11 @@ change default shell
 	sudo nvim /etc/passwd
 	change line with user name
 
+flameshot ctrl+c not working well:
+	nvim .xinitrc
+	exec dbus-launch <wm>
+	where <wm> is your window manager
+
 discord running slow: (doesn't work anymore)
 	sudo nvim /usr/share/applications/discord.desktop
 	change line 6 to:

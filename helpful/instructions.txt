@@ -12,6 +12,10 @@ edit gtk themes, cursors, etc:
 	sudo pacman -S lxappearance
 	lxappearance
 
+change default shell
+	sudo nvim /etc/passwd
+	change line with user name
+
 discord running slow: (doesn't work anymore)
 	sudo nvim /usr/share/applications/discord.desktop
 	change line 6 to:

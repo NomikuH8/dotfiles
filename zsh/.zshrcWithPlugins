@@ -91,15 +91,12 @@ export LESS=-R
 
 ## Plugins section: Enable fish style features
 # Use syntax highlighting
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Use history substring search
-#source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys to history substring search
-#zmodload zsh/terminfo
-#bindkey "$terminfo[kcuu1]" history-substring-search-up
-#bindkey "$terminfo[kcud1]" history-substring-search-down
-#bindkey '^[[A' history-substring-search-up
-#bindkey '^[[B' history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # Offer to install missing package if command is not found
 #if [[ -r /usr/share/zsh/functions/command-not-found.zsh ]]; then
@@ -212,4 +209,9 @@ export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
 
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[white]%}%1d%{$fg[red]%}]%{$reset_color%}$%b "
+# Prompt
+#old
+#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[white]%}%1d%{$fg[red]%}]%{$reset_color%}$%b "
+#no colors
+#PS1="[%n@%m %1~]$ "
+PS1="%F{yellow}[%f%F{magenta}%n%f@%F{cyan}%m%f %F{red}%1~%f%F{yellow}]%f%F{white}$ %f"

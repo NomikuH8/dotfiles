@@ -204,12 +204,14 @@ mouse_warping none
 bindsym $mod+Shift+Page_Up exec xrandr --output DP-0 --brightness 1.0 --output DVI-D-0 --brightness 1.0
 bindsym $mod+Shift+Page_Down exec xrandr --output DP-0 --brightness $(echo "$(xrandr --verbose | grep DP-0 -A 5 | grep Brightness | grep -o '[0-9].*')-0.1" | bc) --output DVI-D-0 --brightness $(echo "$(xrandr --verbose | grep DVI-D-0 -A 5 | grep Brightness | grep -o '[0-9].*')-0.1" | bc)
 
-exec "setxkbmap -layout br"
-exec "xrandr --output DVI-D-0 --primary"
-# Need to install nvidia drivers (may not be necessary)
-exec "xrandr --output DP-0 --right-of DVI-D-0"
 
 #exec "feh --bg-fill ~/Pictures/Background/bg.png"
 exec "nitrogen --restore"
 exec "picom"
 exec "polybar"
+
+# Need to install nvidia drivers (may not be necessary)
+exec "setxkbmap -layout br"
+exec "xrandr --output DVI-D-0 --primary"
+exec "xrandr --output DP-0 --right-of DVI-D-0"
+exec "xset b off" # disable bell

@@ -5,7 +5,7 @@ window:
 
   decorations: full
 
-  opacity: 1.0
+  opacity: 0.8
 
   #startup_mode: Maximized
 

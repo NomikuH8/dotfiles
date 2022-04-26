@@ -206,12 +206,12 @@ bindsym $mod+Shift+Page_Down exec xrandr --output DP-0 --brightness $(echo "$(xr
 
 
 #exec "feh --bg-fill ~/Pictures/Background/bg.png"
-exec "nitrogen --restore"
-exec "picom"
-exec "polybar"
+exec_always --no-startup-id nitrogen --restore
+exec_always --no-startup-id pkill picom; picom --no-use-damage
+exec_always polybar
 
 # Need to install nvidia drivers (may not be necessary)
-exec "setxkbmap -layout br"
-exec "xrandr --output DVI-D-0 --primary"
-exec "xrandr --output DP-0 --right-of DVI-D-0"
-exec "xset b off" # disable bell
+exec_always setxkbmap -layout br
+exec_always xrandr --output DVI-D-0 --primary
+exec_always xrandr --output DP-0 --right-of DVI-D-0
+exec_always xset b off # disable bell

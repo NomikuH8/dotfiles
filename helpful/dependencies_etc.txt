@@ -1,7 +1,8 @@
 --- to i3: ---
 yay								aur helper
 feh								background image
-alacritty						terminal
+alacritty (optional)			terminal
+kitty	  (optional)			terminal (ligatures and images in terminal)
 ttf-fira-code					monospace font
 ttf-ubuntu-font-family			normal font
 pavucontrol						audio controller

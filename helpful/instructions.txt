@@ -12,9 +12,12 @@ edit gtk themes, cursors, etc:
 	sudo pacman -S lxappearance
 	lxappearance
 
-change default shell
+change default shell:
 	sudo nvim /etc/passwd
 	change line with user name
+
+change default web browser:
+	xdg-settings set default-web-browser firefox.desktop
 
 flameshot ctrl+c not working well:
 	nvim .xinitrc

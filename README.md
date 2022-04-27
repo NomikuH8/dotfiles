@@ -22,6 +22,9 @@ picom:
 flameshot:
 	~/.config/flameshot/flameshot.ini
 
+kitty:
+	~/.config/kitty/kitty.conf
+
 90-libinput.conf: (sensitivity)
 	/etc/X11/xorg.conf.d/90-libinput.conf
 

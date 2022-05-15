@@ -30,3 +30,6 @@ kitty:
 
 inputrc: (to disable beep)
 	/etc/inputrc
+
+sus (useful) (use to suspend system):
+	/usr/bin
